@@ -37,6 +37,7 @@ button {
     border-style: none;
     background-color: var(--color-01);
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 
 }
 
@@ -160,20 +161,24 @@ main .employee-list {
     text-align: center;
     background-color: var(--color-02);
     padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 main .employee-list h2 {
-    padding: 50px;
+    padding: 100px 50px;
     text-align: center;
     color: var(--color-04);
     margin-bottom: 50px;
 }
+
 
 main .employee-list .employee-wrapper {
     display: flex;
     margin: var(--margin-main);
     background-color: var(--color-03);
     margin-bottom: 40px;
+    height: 250px;
+
 }
 
 main .employee-list button {
@@ -183,6 +188,7 @@ main .employee-list button {
 main .employee-list .employee-wrapper .employee {
     color: var(--color-06);
     padding: 10px;
+    width: 100%;
 }
 
 main .employee-list .employee-wrapper .employee img {
@@ -196,6 +202,10 @@ main .employee-list .employee-wrapper .employee img {
 
 main .employee-list .employee-wrapper .employee h3 {
     color: var(--color-04);
+}
+
+main .employee-list .employee-wrapper .employee div {
+    margin: 70px;
 }
 
 footer {

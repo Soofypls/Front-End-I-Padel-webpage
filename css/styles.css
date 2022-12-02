@@ -81,6 +81,7 @@ main .slider-container {
     margin: var(--margin-main);
     margin-bottom: 95px;
     justify-content: space-between;
+    text-align: right;
 }
 
 main .slider-container>div {
@@ -97,13 +98,14 @@ main .slider-container div button {
 }
 
 main .slider-container .slider-container-text h1 {
-    font-size: 30px;
+    font-size: 50px;
     color: var(--color-04);
 }
 
 main .slider-container .slider-container-text>div {
     color: var(--color-05);
     margin: 20px 0;
+    font-size: 18px;
 }
 
 main .diff-section {
@@ -113,6 +115,10 @@ main .diff-section {
     color: var(--color-02);
     padding: var(--margin-main);
     margin-bottom: 50px;
+}
+
+main .diff-section h2 {
+    font-size: 36px;
 }
 
 main .diff-section>div {
@@ -150,6 +156,7 @@ main .company-items li h3 {
     display: inline-block;
     color: var(--color-04);
     font-weight: bold;
+    font-size: 18px;
 }
 
 main .company-items li>div {
@@ -169,6 +176,7 @@ main .employee-list h2 {
     text-align: center;
     color: var(--color-04);
     margin-bottom: 50px;
+    font-size: 39px;
 }
 
 
@@ -202,10 +210,12 @@ main .employee-list .employee-wrapper .employee img {
 
 main .employee-list .employee-wrapper .employee h3 {
     color: var(--color-04);
+    margin-top: 20px;
+    font-size: 18px;
 }
 
 main .employee-list .employee-wrapper .employee div {
-    margin: 70px;
+    margin: 50px;
 }
 
 footer {
@@ -218,10 +228,12 @@ footer .footer-info {
     align-items: center;
     margin: var(--margin-main);
     justify-content: space-between;
+    height: 225px;
 }
 
 footer .footer-info>div:first-child {
-    max-width: 300px;
+    font-size: 40px;
+    max-width: 800px;
 }
 
 footer .footer-info button {

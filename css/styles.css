@@ -1,0 +1,260 @@
+:root {
+    --color-01: #8b48bf;
+    --color-02: white;
+    --color-03: #f9f9f9;
+    --color-04: #252e47;
+    --color-05: #3a3939;
+    --color-06: #c0bebe;
+    --color-07: #1e1e26;
+    --margin-main: 0 100px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-03);
+}
+
+header {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    margin: var(--margin-main);
+}
+
+button {
+    border-radius: 15px;
+    padding: 10px 20px;
+    color: var(--color-02);
+    border-style: none;
+    background-color: var(--color-01);
+} 
+
+header > div, 
+header > nav {
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+}
+
+header .header-nav {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+header .header-nav button {
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--color-02);
+    border-style: none;
+    background-color: var(--color-01);
+    display: none;
+}
+
+header .header-nav .menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    margin: 0 15px;
+}
+
+header .header-nav a:hover {
+    color: gray;
+}
+
+main .slider-container {
+    display: flex;
+    height: 300px;
+    align-items: center;
+    border: 1px solid black;
+    margin: var(--margin-main);
+}
+
+main .slider-container > div {
+    flex: 1 1 0;
+    border: 1px solid black;
+    text-align: right;
+}
+
+main .slider-container .slider-container-text h1 {
+    font-size: 30px;
+    color: var(--color-04);
+}
+
+main .slider-container .slider-container-text > div {
+    color: var(--color-05);
+    margin: 20px 0;
+} 
+
+main .diff-section {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-01);
+    color: var(--color-02);
+    padding: var(--margin-main);
+} 
+
+main .diff-section > div {
+    flex: 1 1 0;
+    margin: 25px
+}
+
+main .company-items ol {
+    counter-reset: item;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+main .company-items li::before {
+    counter-increment: item;
+    content: "0" counter(item);
+    background-color: var(--color-01);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: var(--color-02);
+    margin-right: 20px;
+}
+
+main .company-items li {
+    padding: 5px;
+    margin: 10px;
+    max-width: 400px;
+}
+
+main .company-items li h3 {
+   display: inline-block;
+   color: var(--color-04);
+   font-weight: bold;
+}
+
+main .company-items li > div {
+    margin-left: 82px;
+    color: var(--color-06);
+}
+
+main .employee-list {
+    text-align: center;
+    background-color: var(--color-02);
+    padding-bottom: 100px;
+}
+
+main .employee-list h2 {
+    padding: 50px;
+    text-align: center;
+    color: var(--color-04);
+    margin-bottom: 50px;
+}
+
+main .employee-list .employee-wrapper {
+    display: flex;
+    margin: var(--margin-main);
+    background-color: var(--color-03);
+    margin-bottom: 40px;
+}
+
+main .employee-list button {
+    width: 100px;
+}
+
+main .employee-list .employee-wrapper .employee {
+    color: var(--color-06);
+    padding: 10px;
+}
+
+main .employee-list .employee-wrapper .employee img {
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-07);
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+
+main .employee-list .employee-wrapper .employee h3 {
+    color: var(--color-04);
+}
+
+footer {
+    background-color: var(--color-01);
+    color: var(--color-02);
+}
+
+footer .footer-info {
+    display: flex;
+    align-items: center;
+    margin: var(--margin-main);
+    justify-content: space-between;
+} 
+
+footer .footer-info > div:first-child {
+    max-width: 300px;
+}
+
+footer .footer-info button {
+    background-color: var(--color-03);
+    color: var(--color-01);
+    box-shadow: 0px 3px 5px 0px var(--color-04);
+}
+
+footer .footer-links {
+    display: flex;
+    background-color: var(--color-07);
+    padding: var(--margin-main);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .footer-links > div,
+footer .footer-links > nav {
+    flex: 1 1 0;
+}
+
+footer .footer-links .social {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-links .social .social-links {
+    margin-top: auto;
+}
+
+footer .footer-links .social .social-links img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+footer .footer-links .footer-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-links .footer-nav a {
+    display: block;
+    color: var(--color-03);
+    text-decoration: none;
+    padding: 5px;
+}
+
+footer .footer-links .searching-box {
+    text-align: right;
+    white-space: nowrap;
+}
+
+footer .footer-links .searching-box input {
+    color: var(--color-06);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 5px;
+}

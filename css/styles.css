@@ -1,11 +1,12 @@
 :root {
     --color-01: #8b48bf;
     --color-02: white;
-    --color-03: #f9f9f9;
-    --color-04: #252e47;
+    --color-03: #fafafa;
+    --color-04: #232C50;
     --color-05: #3a3939;
-    --color-06: #c0bebe;
+    --color-06: #B3B2B7;
     --color-07: #1e1e26;
+    --color-08: #3CDDF3;
     --margin-main: 0 100px;
 }
 
@@ -17,15 +18,16 @@
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
     background-color: var(--color-03);
 }
 
 header {
     display: flex;
-    height: 100px;
+    height: 150px;
     justify-content: space-between;
     margin: var(--margin-main);
+    margin-bottom: 100px;
 }
 
 button {
@@ -34,17 +36,15 @@ button {
     color: var(--color-02);
     border-style: none;
     background-color: var(--color-01);
-} 
+}
 
-header > div, 
-header > nav {
+header>div,
+header>nav {
     display: flex;
-    border: 1px solid black;
     align-items: center;
 }
 
 header .header-nav {
-    border: 1px solid black;
     display: flex;
     align-items: center;
 }
@@ -71,16 +71,19 @@ header .header-nav a:hover {
 
 main .slider-container {
     display: flex;
-    height: 300px;
     align-items: center;
-    border: 1px solid black;
     margin: var(--margin-main);
+    margin-bottom: 95px;
 }
 
-main .slider-container > div {
+main .slider-container>div {
     flex: 1 1 0;
-    border: 1px solid black;
     text-align: right;
+    padding: 0 100px;
+}
+
+main .slider-container>div:first-child {
+    text-align: center;
 }
 
 main .slider-container .slider-container-text h1 {
@@ -88,10 +91,10 @@ main .slider-container .slider-container-text h1 {
     color: var(--color-04);
 }
 
-main .slider-container .slider-container-text > div {
+main .slider-container .slider-container-text>div {
     color: var(--color-05);
     margin: 20px 0;
-} 
+}
 
 main .diff-section {
     display: flex;
@@ -99,9 +102,10 @@ main .diff-section {
     background-color: var(--color-01);
     color: var(--color-02);
     padding: var(--margin-main);
-} 
+    margin-bottom: 50px;
+}
 
-main .diff-section > div {
+main .diff-section>div {
     flex: 1 1 0;
     margin: 25px
 }
@@ -126,18 +130,17 @@ main .company-items li::before {
 }
 
 main .company-items li {
-    padding: 5px;
     margin: 10px;
-    max-width: 400px;
+    max-width: 420px;
 }
 
 main .company-items li h3 {
-   display: inline-block;
-   color: var(--color-04);
-   font-weight: bold;
+    display: inline-block;
+    color: var(--color-04);
+    font-weight: bold;
 }
 
-main .company-items li > div {
+main .company-items li>div {
     margin-left: 82px;
     color: var(--color-06);
 }
@@ -194,9 +197,9 @@ footer .footer-info {
     align-items: center;
     margin: var(--margin-main);
     justify-content: space-between;
-} 
+}
 
-footer .footer-info > div:first-child {
+footer .footer-info>div:first-child {
     max-width: 300px;
 }
 
@@ -214,8 +217,8 @@ footer .footer-links {
     padding-bottom: 20px;
 }
 
-footer .footer-links > div,
-footer .footer-links > nav {
+footer .footer-links>div,
+footer .footer-links>nav {
     flex: 1 1 0;
 }
 

@@ -31,12 +31,15 @@ header {
 }
 
 button {
-    border-radius: 15px;
+    border-radius: 50px;
     padding: 10px 20px;
     color: var(--color-02);
     border-style: none;
     background-color: var(--color-01);
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+
 }
+
 
 header>div,
 header>nav {
@@ -51,11 +54,13 @@ header .header-nav {
 
 header .header-nav button {
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 50px;
     color: var(--color-02);
     border-style: none;
     background-color: var(--color-01);
     display: none;
+
+
 }
 
 header .header-nav .menu a {
@@ -74,15 +79,19 @@ main .slider-container {
     align-items: center;
     margin: var(--margin-main);
     margin-bottom: 95px;
+    justify-content: space-between;
 }
 
 main .slider-container>div {
-    flex: 1 1 0;
-    text-align: right;
-    padding: 0 100px;
+    justify-content: space-between;
 }
 
 main .slider-container>div:first-child {
+    text-align: center;
+}
+
+main .slider-container div button {
+    margin-left: 800px;
     text-align: center;
 }
 
@@ -107,8 +116,10 @@ main .diff-section {
 
 main .diff-section>div {
     flex: 1 1 0;
-    margin: 25px
+    margin: 25px;
+    text-align: left;
 }
+
 
 main .company-items ol {
     counter-reset: item;

@@ -86,12 +86,12 @@ main .slider-container {
 }
 
 
-main .slider-container>div {
-    flex-direction: row;
-}
-
 main .slider-container>div:first-child {
     text-align: center;
+}
+
+main .slider-container div img {
+    width: 400px;
 }
 
 main .slider-container div button {
@@ -326,7 +326,9 @@ footer .copyright {
     font-size: 13px;
     color: var(--color-06);
     margin-top: auto;
-
+    background-color: var(--color-07);
+    text-align: right;
+    padding: 20px 20px 20px 0;
 }
 
 
@@ -400,4 +402,7 @@ footer .copyright {
         justify-content: initial;
     }
 
+    main .slider-container div img {
+        width: initial;
+    }
 }

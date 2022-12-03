@@ -149,9 +149,8 @@ main .company-items ol {
 
 
 main .company-items li {
-    margin: 10px;
-    max-width: 420px;
-    margin-left: auto;
+    margin-left: 20px;
+    margin-bottom: 40px;
 }
 
 main .company-items ol li h3 {
@@ -222,17 +221,19 @@ main .employee-list .employee-wrapper .employee div {
 }
 
 footer {
-    background-color: var(--color-08);
     color: var(--color-03);
 }
 
 footer .footer-info {
     display: flex;
     align-items: center;
-    margin: var(--margin-main);
+    padding: var(--margin-main);
+    padding-bottom: 30px;
+    padding-top: 30px;
     justify-content: space-between;
-    height: 225px;
     background-color: var(--color-08);
+    flex-direction: column;
+
 }
 
 footer .footer-info>div:first-child {
@@ -241,17 +242,18 @@ footer .footer-info>div:first-child {
 }
 
 footer .footer-info button {
-    background-color: var(--color-03);
-    color: var(--color-01);
+    margin: 20px;
+    background-color: var(--color-04);
+    color: var(--color-03);
     box-shadow: 0px 3px 5px 0px var(--color-04);
+    white-space: nowrap;
 }
 
 footer .footer-links {
     display: flex;
     background-color: var(--color-07);
-    padding: var(--margin-main);
-    padding-top: 60px;
-    padding-bottom: 70px;
+    padding: 70px 50px;
+    flex-direction: column-reverse;
 }
 
 footer .footer-links>div,
@@ -261,11 +263,23 @@ footer .footer-links>nav {
 
 footer .footer-links .social {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 footer .footer-links .social .social-links {
     margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+footer .footer-links .social .social-links a {
+    text-decoration: none;
+}
+
+footer .footer-links .social .logo {
+    display: block;
+    margin: 0 auto;
 }
 
 footer .footer-links .social .social-links img {
@@ -277,6 +291,7 @@ footer .footer-links .social .social-links img {
 footer .footer-links .footer-nav {
     display: flex;
     justify-content: space-between;
+    margin: 20px 0;
 }
 
 footer .footer-links .footer-nav a {
@@ -291,6 +306,11 @@ footer .footer-links .searching-box {
     white-space: nowrap;
     display: flex;
     flex-direction: column;
+    margin: 20px 0;
+}
+
+footer .footer-links .searching-box form {
+    display: flex;
 }
 
 footer .footer-links .searching-box input {
@@ -299,6 +319,7 @@ footer .footer-links .searching-box input {
     border-radius: 20px;
     padding: 10px;
     margin-right: 5px;
+    width: 100%;
 }
 
 footer .copyright {
@@ -331,17 +352,52 @@ footer .copyright {
         background-color: var(--color-01);
     }
 
+    main .company-items li {
+        max-width: 420px;
+    }
+
     main .employee-list .employee-wrapper {
         margin: var(--margin-main);
-        background-color: var(--color-03);
         margin-bottom: 40px;
         min-height: 250px;
         flex-direction: row;
-
     }
 
     footer .footer-info {
-        background-color: var(--color-01;
-        }
-
+        background-color: var(--color-01);
+        padding-bottom: initial;
+        padding-top: initial;
+        flex-direction: row;
     }
+
+    footer .footer-links {
+        padding: var(--margin-main);
+        padding-top: 70px;
+        padding-bottom: 70px;
+        flex-direction: row;
+    }
+
+    footer .footer-links .searching-box form {
+        display: block;
+    }
+
+    footer .footer-links .searching-box input {
+        width: initial;
+    }
+
+    footer .footer-links .social {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .footer-links .social .logo {
+        display: initial;
+        margin: initial;
+    }
+
+    footer .footer-links .social .social-links {
+        display: block;
+        justify-content: initial;
+    }
+
+}

@@ -224,8 +224,8 @@ main .employee-list .employee-wrapper .employee div {
 }
 
 footer {
-    background-color: var(--color-01);
-    color: var(--color-02);
+    background-color: var(--color-08);
+    color: var(--color-03);
 }
 
 footer .footer-info {
@@ -234,7 +234,7 @@ footer .footer-info {
     margin: var(--margin-main);
     justify-content: space-between;
     height: 225px;
-    background-color: var(--color-01);
+    background-color: var(--color-08);
 }
 
 footer .footer-info>div:first-child {
@@ -342,4 +342,8 @@ footer .copyright {
 
     }
 
-}
+    footer .footer-info {
+        background-color: var(--color-01;
+        }
+
+    }

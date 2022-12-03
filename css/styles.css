@@ -55,15 +55,24 @@ header .header-nav {
     align-items: center;
 }
 
+header .header-nav .icon {
+    display: block;
+    align-items: center;
+
+}
+
 header .header-nav button {
     padding: 10px;
     border-radius: 50px;
     color: var(--color-02);
     border-style: none;
     background-color: var(--color-01);
+
+
+}
+
+header .header-nav .menu {
     display: none;
-
-
 }
 
 header .header-nav .menu a {
@@ -113,7 +122,7 @@ main .slider-container .slider-container-text>div {
 main .diff-section {
     display: flex;
     align-items: center;
-    background-color: var(--color-01);
+    background-color: var(--color-08);
     color: var(--color-02);
     padding: var(--margin-main);
     margin-bottom: 50px;
@@ -307,12 +316,17 @@ footer .copyright {
 }
 
 
-@media (min-width:440px) {
+/* Versión Desktop */
+@media (min-width:1000px) {
     main .diff-section {
-        background-color: var(--color-08);
+        background-color: var(--color-01);
     }
 
-    main .employee-list .employee-wrapper .employee h3 {
-        background-color: var(--color-09);
+    header .header-nav .icon {
+        display: none;
+    }
+
+    header .header-nav .menu {
+        display: block;
     }
 }
